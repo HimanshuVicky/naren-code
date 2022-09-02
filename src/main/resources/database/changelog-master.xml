@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+	<!--  
+	<includeAll path="scripts/" relativeToChangelogFile="true" />
+	
+	<includeAll path="src/main/resources/database/scripts/" relativeToChangelogFile="false" />
+	-->
+	<include file="scripts/createDBStructure.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/AlterTable_1.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/defaultApplicationFee.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/createDBStructure2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/createDBStructure_EmailAttachement.sql" relativeToChangelogFile="true"/>
+	
+	
+	<include file="scripts/caseScript.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/caseDocument.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/caseLog.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/caseWitness.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_DigitalSignVerificationReference.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/alter_document_contentType.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/alter_userlogin_UNIQUE_CONSTRAINT.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData1.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_dm_obj_import_Blob.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_script_Name.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_dob.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Script_fatherName.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_Script.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_casewitness.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_casewitness_DocType.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RTA_Templates.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Rta_Data_Temp_Order.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Property.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_rtatemplatesFeeRequired.sql" relativeToChangelogFile="true"/>
+
+	<include file="scripts/courier_details.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_ApplicationUser.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_ApplicationUser_Non_Customer.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_RefNo.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/applicationFee.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/FeeMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_script_Isin.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_ApplicationUser_ColmnType.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/cityMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/StateMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_ApplicationUser_ColmnSize3.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_ChequeNumber.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/scriptSearchLog.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/DocumentMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/StatusMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_case_document.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_Script_DistinctiveNo.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_VerifiedFlag.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/caseAccountDetails.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/caseSuretyInfo.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_StatusLength.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CaseScriptQuestioner.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/caseFee.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_FeeDetails.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_ProcessingFee.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/case_ClientId.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/case_shareholder_death_certificatedtl.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_Script_Quantiry.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CustomerDocumentsRequired.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/GeneratedDocumentsRequired.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_StatusLength2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_casewitness_Part3.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_case_shareholder_death_certdtl_DODeatch.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_FeeDetails2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_VerifiedFlag2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_case_document1.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_Gender.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_ChequeDetails.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CaseScriptShareCertificateDetails.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CaseScriptWarrantDetails.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_Script2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Rta_data.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_FeeDetailsTemplateType.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_case_script_warrant_detls.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/case_SurePass_ClientIds.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case1.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_ApplicationUser_CreationDate.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_case_AccountDetails.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_Script3.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_casewitness_Part2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CaseFieldMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CaseFields.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_SuretyInfo.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RTA_TemplateGroup.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_DocumentMasterRta.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_ApplicationUser_Ref_FranchiseId.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_FranchiseId_CONSTRAINT.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Case_CaseIdAUTO_INCREMENT.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_Script_addIndex.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_ApplicationUser_nonCustomerPin.sql" relativeToChangelogFile="true"/>
+	<!-- Phase 2 -->
+	<include file="scripts/phase2/Alter_Franchise_referrals.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/Add_UserType_Referral.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/Alter_ApplicationUser_Referral_UserId.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/eSign_SurePass_ClientIds.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/eSign_Document.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/Alter_referralscommissiondtl_UserId_FranchiseId.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/VW_Application_Detls.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_CaseCommissionDetails.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_ApplicationUser_RefPartner_Parent_FranchiseId.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/VW_Application_Detls2.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/VW_CaseAgreementFeeValue.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/VW_Referral_Detls.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Add_UserType_Notary.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_Case_NotaryPartnerId.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Add_UserType_CA.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_case_script_warrant_detls.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_feemaster_user_type.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_referralscommissiondtl_FeeReference.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_feemaster_user_type_Lawyer.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/VW_Franchise_Name.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/alter_scriptsearchlog_totalScriptCost.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Lawyer_Notary_Fee.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Lawyer_Notary_MasterDocument.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_Case_PanVerified.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Lawyer_Notary_FeeAndDocs.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_docmentMaster_user_type.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_LawyercommentDtl.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Update_DocumentMaster.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/Alter_LawyerCommentSize.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/update_questioner.sql" relativeToChangelogFile="true" />
+	<include file="scripts/phase2/defaultGSTPercent.sql" relativeToChangelogFile="true" />
+	
+		
+	<!--  All Master Data script should be kept here -->
+	<include file="scripts/masterData2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData3.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData4.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_feemaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_TypeOfUser_2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData5.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CityMasterData.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/StateMasterData.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_feemaster1.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterDataForQuestioners.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData6.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_DocumentMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_StatusMaster.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData8.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterDataRtaAddress.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterDataCorrectionForSignCordinates.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/alter_document_Type2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterDataPDFCornidates.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/StateMasterDataCorrection.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_DocumentMaster2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_customer_documents_required_documentId_1.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/Alter_case_generated_documents_required2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterDataForQuestioners_update2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData9.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData10.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData11.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData12.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS_update.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/masterData_properties_update2.sql" relativeToChangelogFile="true"/>
+ 	<include file="scripts/masterData_MessageTemplate_SMS_update2.sql" relativeToChangelogFile="true"/>
+ 	<include file="scripts/masterData13.sql" relativeToChangelogFile="true"/>
+ 	<include file="scripts/masterData_MessageTemplate_SMS_4.sql" relativeToChangelogFile="true"/>
+ 	<include file="scripts/masterData_MessageTemplate_update_6.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData14.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData15.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_Email_updates7.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData16.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_feemaster4.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData17.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData18.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS_Email_updates9.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData19.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData20.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS_Email_updates11.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData21.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS_10.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS12.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_DocumentMaster3.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData22.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData23.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData24.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_For_DocumentMaster4.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CaseFieldsMasterData.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/CaseFieldsMasterData2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS_Email_updates12.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_Property_SMS_Service_ON_OFF.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData_MessageTemplate_SMS_Email_updates13.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/templateSetup.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData25ActualDateTransferIEPFOptional.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData26CloseStatus.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/masterData27DL_Script.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/ReferralPartnerFranchiseMessageTemplate_SMS.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/user_audit.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/phase2/CaseFieldsMasterDataUpdated.sql" relativeToChangelogFile="true"/>
+	
+	<!-- TODO remove for Production Start-->
+	<include file="scripts/testData.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/testData2.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/testDataRTA_Templates2.sql" relativeToChangelogFile="true"/>
+	<!-- TODO remove for Production End-->
+	
+
+
+</databaseChangeLog>
