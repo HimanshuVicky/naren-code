@@ -234,8 +234,13 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat9-maven-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<server>AssignSecurities</server>
+					<url>http://52.91.226.237:8001/manager/text</url>
+				</configuration>	
 			</plugin>
 		</plugins>
 	</build>
